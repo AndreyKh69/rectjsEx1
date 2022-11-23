@@ -5,7 +5,7 @@ function ProductItem(props) {
   // console.log(data);
 
   return (
-    <div className="productItems">
+    <a className="productItems" href={`/product/${data.id}`}>
       <div className="itemInfo">
         <h4>{data.title}</h4>
         <h4>$ {data.price}</h4>
@@ -13,7 +13,7 @@ function ProductItem(props) {
       <div className="itemImg">
         <img src={data.images[0]} alt={data.name} height="150" />
       </div>
-    </div>
+    </a>
   );
 }
 
